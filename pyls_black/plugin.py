@@ -62,7 +62,7 @@ def format_text(*, text, config):
 
 def load_config(filename: str) -> Dict:
     defaults = {
-        "line_length": 88,
+        "line_length": 78,
         "fast": False,
         "pyi": filename.endswith(".pyi"),
         "skip_string_normalization": False,

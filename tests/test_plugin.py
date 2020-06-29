@@ -1,9 +1,9 @@
 from pathlib import Path
 
 import black
-import pytest
 from pyls.workspace import Document
 
+import pytest
 from pyls_black.plugin import load_config, pyls_format_document, pyls_format_range
 
 here = Path(__file__).parent
@@ -188,7 +188,7 @@ def test_load_config_defaults():
     config = load_config(str(fixtures_dir / "example.py"))
 
     assert config == {
-        "line_length": 88,
+        "line_length": 78,
         "target_version": set(),
         "pyi": False,
         "fast": False,
